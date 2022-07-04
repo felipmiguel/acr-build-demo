@@ -1,12 +1,3 @@
-# Spring PetClinic Sample Application [![Build Status](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml/badge.svg)](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml)
-
-This repo is cloned from the classic Spring PetClinic sample that can be found [here](https://github.com/spring-projects/spring-petclinic).
-
-The purpose of this demo is to demonstrate how to use Azure Container Registry (ACR) to build a Docker image from a Spring Boot application without having Docker desktop installed in the developer box. This Docker image can be deployed in any Docker compatible hosting environment, such as Azure App Service, Azure Functions, Azure Kubernetes Services or Azure Container Apps. This image can be used in other environments out of Azure, for instance in a local environment or any other cloud provider.
-For demo purposes it will be deployed in Azure Container Apps.
-
-It can be deployed by executing the commands in [azure.azcli](azure.azcli) script file.
-```bash
 LOCATION=[SET YOUR PREFERED LOCATION HERE]
 RESOURCE_GROUP=[NAME YOUR RESOURCE GROUP]
 ACR_NAME=[NAME YOUR AZURE CONTAINER REGISTRY]
@@ -49,5 +40,3 @@ az containerapp create \
     --target-port 8080 \
     --cpu 1 \
     --memory 2 
-
-```
